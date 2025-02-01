@@ -1,0 +1,100 @@
+/* Import Google Font */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background-color: #ffffff;
+    color: #333;
+    text-align: center;
+    padding: 20px;
+}
+
+/* Header Section */
+header {
+    text-align: center;
+    padding: 20px 0;
+}
+
+h1 {
+    font-size: 48px;
+    font-weight: 600;
+    color: #222;
+}
+
+/* Section Styling */
+section {
+    margin: 50px auto;
+    max-width: 1200px;
+}
+
+/* Climate and Weather Headings */
+h2 {
+    font-size: 36px;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+/* Paragraph Styling */
+p {
+    font-size: 18px;
+    line-height: 1.6;
+    max-width: 800px;
+    margin: 0 auto 20px;
+}
+
+/* Image Containers */
+.image, .symbol {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 20px;
+}
+
+.image img, .symbol img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out;
+}
+
+.image img:hover, .symbol img:hover {
+    transform: scale(1.05);
+}
+
+/* Grid Layout for Images */
+.climate, .weather {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+    justify-items: center;
+    margin-top: 20px;
+}
+
+/* Make Images Smaller on Small Screens */
+@media (max-width: 768px) {
+    h1 {
+        font-size: 36px;
+    }
+
+    h2 {
+        font-size: 28px;
+    }
+
+    p {
+        font-size: 16px;
+    }
+
+    .climate, .weather {
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    }
+}
+
+  
+
